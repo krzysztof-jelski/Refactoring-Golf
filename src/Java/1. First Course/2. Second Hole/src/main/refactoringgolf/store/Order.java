@@ -67,7 +67,7 @@ public class Order {
 		}
 		return shipping;
 	}
-	
+
 	private float tax(float totalAmount) {
 		return totalAmount * 5 / 100;
 	}
