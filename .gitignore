@@ -2,3 +2,6 @@ bin
 obj
 TestResults
 _Resharper.*
+.idea
+*.iml
+*.eml
