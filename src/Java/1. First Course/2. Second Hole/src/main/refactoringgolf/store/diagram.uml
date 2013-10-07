@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>refactoringgolf.store.Employee</OriginalElement>
+  <nodes>
+    <node x="-154.25" y="-95.5">refactoringgolf.store.ProductCategory</node>
+    <node x="237.47500000000002" y="59.0">refactoringgolf.store.Employee</node>
+    <node x="-159.0" y="167.0">refactoringgolf.store.Product</node>
+    <node x="-95.0" y="682.0">refactoringgolf.store.OrderItem</node>
+    <node x="908.75" y="251.0">refactoringgolf.store.ThirdParty</node>
+    <node x="27.75" y="-96.0">refactoringgolf.store.ImageInfo</node>
+    <node x="80.75" y="897.0">refactoringgolf.store.Order</node>
+    <node x="168.25" y="646.0">refactoringgolf.store.Salesman</node>
+    <node x="547.25" y="706.5">refactoringgolf.store.Manager</node>
+    <node x="935.25" y="682.0">refactoringgolf.store.Customer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="refactoringgolf.store.Product" target="refactoringgolf.store.ProductCategory">
+      <point x="-89.5" y="-160.5" />
+      <point x="-69.5" y="34.0" />
+      <point x="-73.25" y="34.0" />
+      <point x="0.0" y="52.0" />
+    </edge>
+    <edge source="refactoringgolf.store.Salesman" target="refactoringgolf.store.Employee">
+      <point x="0.0" y="-100.5" />
+      <point x="347.75" y="621.0" />
+      <point x="379.475" y="621.0" />
+      <point x="-142.0" y="268.5" />
+    </edge>
+    <edge source="refactoringgolf.store.Customer" target="refactoringgolf.store.ThirdParty">
+      <point x="0.0" y="-64.5" />
+      <point x="0.0" y="76.5" />
+    </edge>
+    <edge source="refactoringgolf.store.Order" target="refactoringgolf.store.OrderItem">
+      <point x="-178.0" y="-232.5" />
+      <point x="169.75" y="872.0" />
+      <point x="20.0" y="872.0" />
+      <point x="0.0" y="64.5" />
+    </edge>
+    <edge source="refactoringgolf.store.Product" target="refactoringgolf.store.ImageInfo">
+      <point x="89.5" y="-160.5" />
+      <point x="109.5" y="34.0" />
+      <point x="113.25" y="34.0" />
+      <point x="0.0" y="52.5" />
+    </edge>
+    <edge source="refactoringgolf.store.Order" target="refactoringgolf.store.Customer">
+      <point x="178.0" y="-232.5" />
+      <point x="525.75" y="872.0" />
+      <point x="1049.25" y="872.0" />
+      <point x="0.0" y="64.5" />
+    </edge>
+    <edge source="refactoringgolf.store.Order" target="refactoringgolf.store.Salesman">
+      <point x="0.0" y="-232.5" />
+      <point x="0.0" y="100.5" />
+    </edge>
+    <edge source="refactoringgolf.store.Manager" target="refactoringgolf.store.Employee">
+      <point x="0.0" y="-40.0" />
+      <point x="731.25" y="621.0" />
+      <point x="663.475" y="621.0" />
+      <point x="142.0" y="268.5" />
+    </edge>
+    <edge source="refactoringgolf.store.OrderItem" target="refactoringgolf.store.Product">
+      <point x="0.0" y="-64.5" />
+      <point x="0.0" y="160.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="425.00000000000006" y="581.4285714285713" />
+  <SelectedNodes>
+    <node>refactoringgolf.store.Salesman</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
