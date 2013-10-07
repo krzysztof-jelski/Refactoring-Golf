@@ -29,7 +29,7 @@ public class OrderItem {
 		if (getProduct().getCategory() == ProductCategory.Bikes) {
 			discount = calculateBikesDiscount();
 		}
-		if (getProduct().getCategory() == ProductCategory.Cloathing) {
+		if (getProduct().getCategory() == ProductCategory.Clothing) {
 			discount = calculateCloathingDiscount();
 		}
 		return unitPricePerQuantity() - discount;

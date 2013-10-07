@@ -1,11 +1,8 @@
 package refactoringgolf.store;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 
-import refactoringgolf.store.ImageInfo;
-import refactoringgolf.store.Product;
+import static org.junit.Assert.*;
 
 public class ProductTest {
 

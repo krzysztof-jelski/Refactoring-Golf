@@ -66,7 +66,7 @@ public class Order {
 
 	private int shipping() {
 		int shipping = 15;
-		if (this.deliveryCountry == "USA") {
+		if (this.deliveryCountry.equals("USA")) {
 			shipping = 0;
 		}
 		return shipping;

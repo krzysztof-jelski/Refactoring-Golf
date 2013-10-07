@@ -1,16 +1,10 @@
 package refactoringgolf.store;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 import java.util.Date;
 
-import org.junit.Test;
-
-import refactoringgolf.store.Customer;
-import refactoringgolf.store.Order;
-import refactoringgolf.store.OrderItem;
-import refactoringgolf.store.Product;
-import refactoringgolf.store.Salesman;
+import static org.junit.Assert.*;
 
 public class OrderTest {
 
@@ -47,9 +41,9 @@ public class OrderTest {
 	}
 
 	@Test
-	public void returnTheTotalWithCloathingDiscount() {
+	public void returnTheTotalWithClothingDiscount() {
 		Order order = createOrder("USA");
-		OrderItem orderItem = createOrderItem(100, Product.CLOATHING, 3);
+		OrderItem orderItem = createOrderItem(100, Product.CLOTHING, 3);
 		addItemToOrder(order, orderItem);
 
 		float total = order.total();

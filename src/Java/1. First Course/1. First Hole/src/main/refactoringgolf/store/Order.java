@@ -62,7 +62,7 @@ public class Order {
 
 	private int shipping() {
 		int shipping = 15;
-		if (this.deliveryCountry == "USA") {
+		if (this.deliveryCountry.equals("USA")) {
 			shipping = 0;
 		}
 		return shipping;
@@ -86,7 +86,7 @@ public class Order {
 			if (item.getProduct().getCategory().equals(Product.BIKES)) {
 				discount = itemAmount * 20 / 100;
 			}
-			if (item.getProduct().getCategory().equals(Product.CLOATHING)) {
+			if (item.getProduct().getCategory().equals(Product.CLOTHING)) {
 				discount = 0;
 				if (item.getQuantity() > 2) {
 					discount = item.getProduct().getUnitPrice();

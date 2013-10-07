@@ -33,7 +33,7 @@ public class OrderItem {
 		if (getProduct().getCategory() == ProductCategory.Bikes) {
 			categoryDiscount = new BikesDiscount();
 		}
-		if (getProduct().getCategory() == ProductCategory.Cloathing) {
+		if (getProduct().getCategory() == ProductCategory.Clothing) {
 			categoryDiscount = new CloathingDiscount();
 		}
 		return categoryDiscount;

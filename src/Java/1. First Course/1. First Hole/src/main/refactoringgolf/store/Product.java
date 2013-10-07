@@ -2,7 +2,7 @@ package refactoringgolf.store;
 
 public class Product {
 
-    public static final String CLOATHING = "Cloathing";
+    public static final String CLOTHING = "Clothing";
     public static final String ACCESSORIES = "Accessories";
     public static final String BIKES = "Bikes";
     /* The Name */

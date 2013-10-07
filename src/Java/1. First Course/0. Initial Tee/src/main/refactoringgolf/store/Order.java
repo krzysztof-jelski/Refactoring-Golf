@@ -67,17 +67,17 @@ public class Order {
 				// itemAmount=itemAmount-discount
 				itemAmount = itemAmount - itemAmount * 20 / 100;
 			}
-			if (item.getProduct().getCategory().equals(Product.CLOATHING)) {
-				float cloathingDiscount = 0;
+			if (item.getProduct().getCategory().equals(Product.CLOTHING)) {
+				float clothingDiscount = 0;
 				if (item.getQuantity() > 2) {
-					cloathingDiscount = item.getProduct().getUnitPrice();
+					clothingDiscount = item.getProduct().getUnitPrice();
 				}
-				itemAmount = itemAmount - cloathingDiscount;
+				itemAmount = itemAmount - clothingDiscount;
 			}
 			totalItems += itemAmount;
 		}
 
-		if (this.deliveryCountry == "USA")
+		if (this.deliveryCountry.equals("USA"))
 			// totalAmount=totalItemAmount + tax + 0 shipping
 			return totalItems + totalItems * 5 / 100;
 
