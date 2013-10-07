@@ -5,19 +5,11 @@ public class Product {
     public static final String CLOTHING = "Clothing";
     public static final String ACCESSORIES = "Accessories";
     public static final String BIKES = "Bikes";
-    /* The Name */
+
 	public String name;
-
-	/* The UnitPrice */
 	public float unitPrice;
-
-	/* The Category */
 	public String category;
-
-	/* The Image */
 	public ImageInfo image;
-
-	/* The Category */
 	public int unitsInStock;
 
 	public Product(String name, float unitPrice, String category, ImageInfo image) {
