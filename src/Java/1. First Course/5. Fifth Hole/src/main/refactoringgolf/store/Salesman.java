@@ -5,10 +5,10 @@ public class Salesman extends Employee {
 	private int commissionPercentage;
 	private float monthQuota;
 
-	public Salesman(String firstName, String lastName, float fixedSalary, int commissionPercentage) {
-		super(firstName, lastName, fixedSalary);
-		this.commissionPercentage = commissionPercentage;
-	}
+	public Salesman(String firstName, String lastName, float fixedSalary, int commissionPercentage){
+    	super(firstName, lastName, fixedSalary);
+        this.commissionPercentage = commissionPercentage;
+    }
 
 	public void setCommissionPercentage(int commissionPercentage) {
 		this.commissionPercentage = commissionPercentage;

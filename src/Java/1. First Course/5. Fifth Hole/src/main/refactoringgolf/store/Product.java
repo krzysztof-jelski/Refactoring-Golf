@@ -43,4 +43,8 @@ public class Product {
 		return "<product>" + "<name>" + name + "</name>" + "<category>"
 				+ category + "</category>" + "</product>";
 	}
+
+    CategoryDiscount getDiscount() {
+        return getCategory().getDiscount();
+    }
 }
