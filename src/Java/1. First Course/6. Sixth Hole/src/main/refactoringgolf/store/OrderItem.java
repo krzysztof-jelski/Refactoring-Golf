@@ -19,21 +19,7 @@ public class OrderItem {
     }
 
     public float total() {
-        return unitPricePerQuantity() - createCategoryDiscount().calculateDiscount(this);
-    }
-
-    private CategoryDiscount createCategoryDiscount() {
-        CategoryDiscount categoryDiscount = null;
-        if (getProduct().getCategory() == ProductCategory.Accessories) {
-            categoryDiscount = new AccessoriesDiscount();
-        }
-        if (getProduct().getCategory() == ProductCategory.Bikes) {
-            categoryDiscount = new BikesDiscount();
-        }
-        if (getProduct().getCategory() == ProductCategory.Clothing) {
-            categoryDiscount = new ClothingDiscount();
-        }
-        return categoryDiscount;
+        return unitPricePerQuantity() - product.getDiscount().calculateDiscount(this);
     }
 
     float unitPricePerQuantity() {
