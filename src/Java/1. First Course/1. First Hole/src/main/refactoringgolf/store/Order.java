@@ -78,7 +78,6 @@ public class Order {
             float discount = 0;
             float itemAmount = item.getProduct().getUnitPrice() * item.getQuantity();
             if (item.getProduct().getCategory().equals(Product.ACCESSORIES)) {
-                discount = 0;
                 if (itemAmount >= 100) {
                     discount = itemAmount * 10 / 100;
                 }
