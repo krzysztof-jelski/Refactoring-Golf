@@ -1,19 +1,19 @@
 package refactoringgolf.store;
 
 public enum ProductCategory {
-    Accessories{
+    Accessories {
         @Override
         public CategoryDiscount getDiscount() {
             return new AccessoriesDiscount();
         }
     },
-    Bikes{
+    Bikes {
         @Override
         public CategoryDiscount getDiscount() {
             return new BikesDiscount();
         }
     },
-    Clothing{
+    Clothing {
         @Override
         public CategoryDiscount getDiscount() {
             return new ClothingDiscount();

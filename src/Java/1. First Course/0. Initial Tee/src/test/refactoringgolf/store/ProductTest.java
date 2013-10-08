@@ -6,25 +6,25 @@ import static org.junit.Assert.*;
 
 public class ProductTest {
 
-	@Test
-	public void productImageReturnTheType() {
-		ImageInfo imageInfo = new ImageInfo("Bike01.jpg");
+    @Test
+    public void productImageReturnTheType() {
+        ImageInfo imageInfo = new ImageInfo("Bike01.jpg");
 
-		String type = imageInfo.getImageType();
+        String type = imageInfo.getImageType();
 
-		assertEquals("jpg", type);
-	}
+        assertEquals("jpg", type);
+    }
 
-	@Test
-	public void serializeToXml() {
-		Product product = createProduct();
+    @Test
+    public void serializeToXml() {
+        Product product = createProduct();
 
-		String xml = product.toXml();
+        String xml = product.toXml();
 
-		assertEquals("<product><name>Black Bike</name><category>Bikes</category></product>", xml);
-	}
+        assertEquals("<product><name>Black Bike</name><category>Bikes</category></product>", xml);
+    }
 
-	private Product createProduct() {
-		return new Product("Black Bike", 250, Product.BIKES, new ImageInfo("Bike01.jpg"));
-	}
+    private Product createProduct() {
+        return new Product("Black Bike", 250, Product.BIKES, new ImageInfo("Bike01.jpg"));
+    }
 }

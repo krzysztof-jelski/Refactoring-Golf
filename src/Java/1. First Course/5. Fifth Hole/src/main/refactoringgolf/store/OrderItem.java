@@ -2,30 +2,30 @@ package refactoringgolf.store;
 
 public class OrderItem {
 
-	public Product product;
-	public int quantity;
+    public Product product;
+    public int quantity;
 
-	/*
-	 * Order Item Constructor
-	 */
-	public OrderItem(Product product, int quantity) {
-		this.product = product;
-		this.quantity = quantity;
-	}
+    /*
+     * Order Item Constructor
+     */
+    public OrderItem(Product product, int quantity) {
+        this.product = product;
+        this.quantity = quantity;
+    }
 
-	public Product getProduct() {
-		return product;
-	}
+    public Product getProduct() {
+        return product;
+    }
 
-	public int getQuantity() {
-		return quantity;
-	}
+    public int getQuantity() {
+        return quantity;
+    }
 
-	public float total() {
-		return unitPricePerQuantity() - product.getDiscount().calculateDiscount(this);
-	}
+    public float total() {
+        return unitPricePerQuantity() - product.getDiscount().calculateDiscount(this);
+    }
 
     float unitPricePerQuantity() {
-		return getProduct().getUnitPrice() * getQuantity();
-	}
+        return getProduct().getUnitPrice() * getQuantity();
+    }
 }
