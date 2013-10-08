@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diagram>
   <ID>JAVA</ID>
-  <OriginalElement>refactoringgolf.store.AccessoriesDiscount</OriginalElement>
+  <OriginalElement>refactoringgolf.store.BikesDiscount</OriginalElement>
   <nodes>
-    <node x="1175.4107142857147" y="-298.33333333333326">refactoringgolf.store.Employee</node>
-    <node x="-619.9999999999999" y="-81.83333333333326">refactoringgolf.store.CloathingDiscount</node>
-    <node x="-134.99999999999977" y="240.66666666666674">refactoringgolf.store.OrderItem</node>
-    <node x="-273.0863095238093" y="-428.83333333333326">refactoringgolf.store.CategoryDiscount</node>
-    <node x="-299.9999999999998" y="-81.83333333333326">refactoringgolf.store.AccessoriesDiscount</node>
-    <node x="526.7500000000001" y="-453.33333333333326">refactoringgolf.store.ImageInfo</node>
-    <node x="591.5000000000001" y="491.66666666666674">refactoringgolf.store.Order</node>
-    <node x="992.5000000000001" y="240.66666666666674">refactoringgolf.store.Salesman</node>
-    <node x="1371.5000000000005" y="264.66666666666674">refactoringgolf.store.Manager</node>
-    <node x="20.000000000000227" y="-81.83333333333326">refactoringgolf.store.BikesDiscount</node>
-    <node x="344.7500000000002" y="-452.83333333333326">refactoringgolf.store.ProductCategory</node>
-    <node x="340.0000000000002" y="-214.33333333333326">refactoringgolf.store.Product</node>
-    <node x="718.0000000000001" y="-130.33333333333326">refactoringgolf.store.ThirdParty</node>
-    <node x="744.5000000000001" y="276.66666666666674">refactoringgolf.store.Customer</node>
+    <node x="271.7380952380963" y="-578.3333333333329">refactoringgolf.store.Employee</node>
+    <node x="-1443.3333333333323" y="-337.8333333333329">refactoringgolf.store.CloathingDiscount</node>
+    <node x="-958.3333333333323" y="8.666666666667084">refactoringgolf.store.OrderItem</node>
+    <node x="-1092.0029761904752" y="-708.8333333333329">refactoringgolf.store.CategoryDiscount</node>
+    <node x="-803.3333333333323" y="-337.8333333333329">refactoringgolf.store.AccessoriesDiscount</node>
+    <node x="-296.58333333333235" y="-733.3333333333329">refactoringgolf.store.ImageInfo</node>
+    <node x="-231.83333333333235" y="259.6666666666671">refactoringgolf.store.Order</node>
+    <node x="169.16666666666765" y="8.666666666667084">refactoringgolf.store.Salesman</node>
+    <node x="548.1666666666677" y="69.16666666666708">refactoringgolf.store.Manager</node>
+    <node x="-1123.3333333333323" y="-337.8333333333329">refactoringgolf.store.BikesDiscount</node>
+    <node x="-478.58333333333235" y="-732.8333333333329">refactoringgolf.store.ProductCategory</node>
+    <node x="-483.33333333333235" y="-470.3333333333329">refactoringgolf.store.Product</node>
+    <node x="-105.33333333333235" y="-386.3333333333329">refactoringgolf.store.ThirdParty</node>
+    <node x="-78.83333333333235" y="44.66666666666708">refactoringgolf.store.Customer</node>
   </nodes>
   <notes />
   <edges>
     <edge source="refactoringgolf.store.Product" target="refactoringgolf.store.ProductCategory">
       <point x="-89.5" y="-160.5" />
-      <point x="429.5000000000001" y="-323.33333333333326" />
-      <point x="425.7500000000001" y="-323.33333333333326" />
+      <point x="-393.83333333333235" y="-603.3333333333329" />
+      <point x="-397.58333333333235" y="-603.3333333333329" />
       <point x="0.0" y="52.0" />
     </edge>
     <edge source="refactoringgolf.store.OrderItem" target="refactoringgolf.store.CloathingDiscount">
       <point x="-108.75" y="-100.5" />
-      <point x="-98.74999999999977" y="220.66666666666674" />
-      <point x="-469.9999999999999" y="220.66666666666674" />
+      <point x="-922.0833333333323" y="-11.333333333332916" />
+      <point x="-1293.3333333333323" y="-11.333333333332916" />
       <point x="0.0" y="28.0" />
     </edge>
     <edge source="refactoringgolf.store.Salesman" target="refactoringgolf.store.Employee">
       <point x="0.0" y="-100.5" />
-      <point x="1172.0" y="220.66666666666674" />
-      <point x="1241.4107142857147" y="220.66666666666674" />
-      <point x="-198.0" y="244.5" />
+      <point x="348.66666666666765" y="-11.333333333332916" />
+      <point x="413.7380952380961" y="-11.333333333332916" />
+      <point x="-142.0" y="268.5" />
     </edge>
     <edge source="refactoringgolf.store.Order" target="refactoringgolf.store.OrderItem">
       <point x="-178.0" y="-232.5" />
-      <point x="680.5000000000001" y="466.66666666666674" />
-      <point x="10.000000000000227" y="466.66666666666674" />
+      <point x="-142.83333333333235" y="234.66666666666708" />
+      <point x="-813.3333333333323" y="234.66666666666708" />
       <point x="0.0" y="100.5" />
+    </edge>
+    <edge source="refactoringgolf.store.Manager" target="refactoringgolf.store.Employee">
+      <point x="0.0" y="-40.0" />
+      <point x="732.1666666666677" y="-11.333333333332916" />
+      <point x="697.7380952380961" y="-11.333333333332916" />
+      <point x="142.0" y="268.5" />
     </edge>
     <edge source="refactoringgolf.store.CloathingDiscount" target="refactoringgolf.store.CategoryDiscount">
       <point x="0.0" y="-28.0" />
-      <point x="-469.9999999999999" y="-323.33333333333326" />
-      <point x="-223.0863095238093" y="-323.33333333333326" />
+      <point x="-1293.3333333333323" y="-603.3333333333329" />
+      <point x="-1042.0029761904752" y="-603.3333333333329" />
       <point x="-100.0" y="28.0" />
     </edge>
-    <edge source="refactoringgolf.store.Manager" target="refactoringgolf.store.Employee">
-      <point x="112.33333333333333" y="-76.5" />
-      <point x="1652.3333333333335" y="220.66666666666674" />
-      <point x="1637.4107142857147" y="220.66666666666674" />
-      <point x="198.0" y="244.5" />
-    </edge>
     <edge source="refactoringgolf.store.OrderItem" target="refactoringgolf.store.BikesDiscount">
-      <point x="36.25" y="-100.5" />
-      <point x="46.25000000000023" y="210.66666666666674" />
-      <point x="170.00000000000023" y="210.66666666666674" />
+      <point x="-36.25" y="-100.5" />
+      <point x="-849.5833333333323" y="-21.333333333332916" />
+      <point x="-973.3333333333323" y="-21.333333333332916" />
       <point x="0.0" y="28.0" />
     </edge>
     <edge source="refactoringgolf.store.Customer" target="refactoringgolf.store.ThirdParty">
@@ -68,21 +68,21 @@
     </edge>
     <edge source="refactoringgolf.store.BikesDiscount" target="refactoringgolf.store.CategoryDiscount">
       <point x="0.0" y="-28.0" />
-      <point x="170.00000000000023" y="-323.33333333333326" />
-      <point x="-23.08630952380929" y="-323.33333333333326" />
-      <point x="100.0" y="28.0" />
+      <point x="-973.3333333333323" y="-603.3333333333329" />
+      <point x="-942.0029761904752" y="-603.3333333333329" />
+      <point x="0.0" y="28.0" />
     </edge>
     <edge source="refactoringgolf.store.Product" target="refactoringgolf.store.ImageInfo">
       <point x="89.5" y="-160.5" />
-      <point x="608.5000000000001" y="-323.33333333333326" />
-      <point x="612.2500000000001" y="-323.33333333333326" />
+      <point x="-214.83333333333235" y="-603.3333333333329" />
+      <point x="-211.08333333333235" y="-603.3333333333329" />
       <point x="0.0" y="52.5" />
     </edge>
     <edge source="refactoringgolf.store.AccessoriesDiscount" target="refactoringgolf.store.CategoryDiscount">
       <point x="0.0" y="-28.0" />
-      <point x="-149.99999999999977" y="-323.33333333333326" />
-      <point x="-123.08630952380929" y="-323.33333333333326" />
-      <point x="0.0" y="28.0" />
+      <point x="-653.3333333333323" y="-603.3333333333329" />
+      <point x="-842.0029761904752" y="-603.3333333333329" />
+      <point x="100.0" y="28.0" />
     </edge>
     <edge source="refactoringgolf.store.Order" target="refactoringgolf.store.Customer">
       <point x="0.0" y="-232.5" />
@@ -90,24 +90,24 @@
     </edge>
     <edge source="refactoringgolf.store.Order" target="refactoringgolf.store.Salesman">
       <point x="178.0" y="-232.5" />
-      <point x="1036.5" y="466.66666666666674" />
-      <point x="1172.0" y="466.66666666666674" />
+      <point x="213.16666666666765" y="234.66666666666708" />
+      <point x="348.66666666666765" y="234.66666666666708" />
       <point x="0.0" y="100.5" />
     </edge>
     <edge source="refactoringgolf.store.OrderItem" target="refactoringgolf.store.Product">
       <point x="108.75" y="-100.5" />
-      <point x="118.75000000000023" y="220.66666666666674" />
-      <point x="519.0000000000001" y="220.66666666666674" />
+      <point x="-704.5833333333323" y="-11.333333333332916" />
+      <point x="-304.33333333333235" y="-11.333333333332916" />
       <point x="0.0" y="160.5" />
     </edge>
     <edge source="refactoringgolf.store.OrderItem" target="refactoringgolf.store.AccessoriesDiscount">
-      <point x="-36.25" y="-100.5" />
-      <point x="-26.249999999999773" y="210.66666666666674" />
-      <point x="-149.99999999999977" y="210.66666666666674" />
+      <point x="36.25" y="-100.5" />
+      <point x="-777.0833333333323" y="-21.333333333332916" />
+      <point x="-653.3333333333323" y="-21.333333333332916" />
       <point x="0.0" y="28.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="91.49999999999989" y="43.5" />
+  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="-715.6666666666667" y="-296.33333333333337" />
   <SelectedNodes />
   <Categories>
     <Category>Fields</Category>

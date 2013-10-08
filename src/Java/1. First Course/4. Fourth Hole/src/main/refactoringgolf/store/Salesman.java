@@ -2,20 +2,20 @@ package refactoringgolf.store;
 
 public class Salesman extends Employee {
 
-	private int commissionPorcentage;
+	private int commissionPercentage;
 	private float monthQuota;
 
-	public Salesman(String firstName, String lastName, float fixedSalary, int commissionPorcentage) {
-		super(firstName, lastName, fixedSalary);
-		this.commissionPorcentage = commissionPorcentage;
+	public Salesman(String firstName, String lastName, float fixedSalary, int commissionPercentage){
+    	super(firstName, lastName, fixedSalary);
+        this.commissionPercentage = commissionPercentage;
+    }
+
+	public void setCommissionPercentage(int commissionPercentage) {
+		this.commissionPercentage = commissionPercentage;
 	}
 
-	public void setCommissionPorcentage(int commissionPorcentage) {
-		this.commissionPorcentage = commissionPorcentage;
-	}
-
-	public int getCommissionPorcentage() {
-		return commissionPorcentage;
+	public int getCommissionPercentage() {
+		return commissionPercentage;
 	}
 
 	public float getMonthQuota() {
@@ -23,7 +23,7 @@ public class Salesman extends Employee {
 	}
 
 	public float netSalary() {
-		float benefits = monthQuota * commissionPorcentage / 100;
+		float benefits = monthQuota * commissionPercentage / 100;
 		float pensionFounds = fixedSalary * 10 / 100;
 		float tax = 0;
 		if (fixedSalary > 3500)

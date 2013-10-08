@@ -30,7 +30,7 @@ public class OrderItem {
 			discount = calculateBikesDiscount();
 		}
 		if (getProduct().getCategory() == ProductCategory.Clothing) {
-			discount = calculateCloathingDiscount();
+			discount = calculateClothingDiscount();
 		}
 		return unitPricePerQuantity() - discount;
 	}
@@ -48,7 +48,7 @@ public class OrderItem {
 		return unitPricePerQuantity() * 20 / 100;
 	}
 
-	private float calculateCloathingDiscount() {
+	private float calculateClothingDiscount() {
 		float discount = 0;
 		if (getQuantity() > 2) {
 			discount = getProduct().getUnitPrice();

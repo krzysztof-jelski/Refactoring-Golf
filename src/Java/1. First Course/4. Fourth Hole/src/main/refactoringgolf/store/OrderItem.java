@@ -1,7 +1,7 @@
 package refactoringgolf.store;
 
 public class OrderItem {
-	
+
 	public Product product;
 	public int quantity;
 
@@ -12,7 +12,7 @@ public class OrderItem {
 		this.product = product;
 		this.quantity = quantity;
 	}
-	
+
 	public Product getProduct() {
 		return product;
 	}
@@ -34,7 +34,7 @@ public class OrderItem {
 			categoryDiscount = new BikesDiscount();
 		}
 		if (getProduct().getCategory() == ProductCategory.Clothing) {
-			categoryDiscount = new CloathingDiscount();
+			categoryDiscount = new ClothingDiscount();
 		}
 		return categoryDiscount;
 	}

@@ -1,8 +1,5 @@
 package refactoringgolf.store;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
 
 public abstract class Employee {
 
@@ -13,8 +10,6 @@ public abstract class Employee {
 	protected String street;
 	protected String city;
 	protected String country;
-	protected Set<Employee> subordinates = new HashSet<Employee>();
-
 	protected Employee(String firstName, String lastName, float fixedSalary) {
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -61,17 +56,14 @@ public abstract class Employee {
 		this.country = country;
 	}
 
-	public Set<Employee> getSubordinates() {
-		return Collections.unmodifiableSet(subordinates);
+	public float netSalary() {
+		float benefits = salaryBenefits();
+		float pensionFounds = this.fixedSalary * 10 / 100;
+		float tax = 0;
+		if (fixedSalary > 3500)
+			tax = fixedSalary * 5 / 100;
+		return fixedSalary + benefits - pensionFounds - tax;
 	}
-
-	public void addSubordinate(Employee subordinate) {
-		subordinates.add(subordinate);
-		subordinate.manager = this;
-	}
-
-	public void removeSubordinate(Employee subordinate) {
-		subordinates.remove(subordinate);
-		subordinate.manager = null;
-	}
+	
+	protected abstract float salaryBenefits();
 }
