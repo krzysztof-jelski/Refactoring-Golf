@@ -53,7 +53,7 @@ public class Order {
     }
 
     public float total() {
-        float totalItems = 0;
+        float totalAmount = 0;
         for (OrderItem item : items) {
             float itemAmount = item.getProduct().getUnitPrice() * item.getQuantity();
             if (item.getProduct().getCategory().equals(Product.ACCESSORIES)) {
@@ -74,14 +74,14 @@ public class Order {
                 }
                 itemAmount = itemAmount - clothingDiscount;
             }
-            totalItems += itemAmount;
+            totalAmount += itemAmount;
         }
 
         if (this.deliveryCountry.equals("USA"))
             // totalAmount=totalItemAmount + tax + 0 shipping
-            return totalItems + totalItems * 5 / 100;
+            return totalAmount + totalAmount * 5 / 100;
 
         // totalAmount=totalItemAmount + tax + 15 shipping
-        return totalItems + totalItems * 5 / 100 + 15;
+        return totalAmount + totalAmount * 5 / 100 + 15;
     }
 }

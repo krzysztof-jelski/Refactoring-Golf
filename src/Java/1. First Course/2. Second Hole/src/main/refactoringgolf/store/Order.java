@@ -53,11 +53,11 @@ public class Order {
     }
 
     public float total() {
-        float totalItems = totalItems();
-        float tax = tax(totalItems);
+        float totalAmount = totalAmount();
+        float tax = tax(totalAmount);
         int shipping = shipping();
 
-        return totalItems + tax + shipping;
+        return totalAmount + tax + shipping;
     }
 
     private int shipping() {
@@ -72,7 +72,7 @@ public class Order {
         return totalAmount * 5 / 100;
     }
 
-    private float totalItems() {
+    private float totalAmount() {
         float totalAmount = 0;
         for (OrderItem item : items) {
             float discount = 0;
