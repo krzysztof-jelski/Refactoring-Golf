@@ -2,11 +2,11 @@ package refactoringgolf.store;
 
 public class Product {
 
-    public String name;
-    public float unitPrice;
-    public ProductCategory category;
-    public ImageInfo image;
-    public int unitsInStock;
+    private String name;
+    private float unitPrice;
+    private ProductCategory category;
+    private ImageInfo image;
+    private int unitsInStock;
 
     public Product(String name, float unitPrice, ProductCategory category, ImageInfo image) {
         this.name = name;
