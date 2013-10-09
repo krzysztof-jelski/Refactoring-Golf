@@ -1,24 +1,24 @@
 package refactoringgolf.store;
 
-public class OrderItem {
+class OrderItem {
 
     private Product product;
     private int quantity;
 
-    public OrderItem(Product product, int quantity) {
+    OrderItem(Product product, int quantity) {
         this.product = product;
         this.quantity = quantity;
     }
 
-    public Product getProduct() {
+    Product getProduct() {
         return product;
     }
 
-    public int getQuantity() {
+    int getQuantity() {
         return quantity;
     }
 
-    public float total() {
+    float total() {
         return unitPricePerQuantity() - createCategoryDiscount().calculateDiscount(this);
     }
 
