@@ -11,7 +11,7 @@ public class OrderTest {
     @Test
     public void holdManyOrderItems() {
         Order order = createOrder(null);
-        OrderItem orderItem = createOrderItem(10, ProductCategory.Accessories, 1);
+        OrderItem orderItem = createOrderItem(10, null, 1);
 
         addItemToOrder(order, orderItem);
 
