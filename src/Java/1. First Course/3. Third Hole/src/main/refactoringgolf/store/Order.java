@@ -79,5 +79,4 @@ public class Order {
         }
         return totalAmount;
     }
-
 }
