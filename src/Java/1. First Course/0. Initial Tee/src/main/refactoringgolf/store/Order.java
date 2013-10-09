@@ -55,25 +55,23 @@ public class Order {
     public float total() {
         float totalAmount = 0;
         for (OrderItem item : items) {
+            float discount = 0;
             float itemAmount = item.getProduct().getUnitPrice() * item.getQuantity();
             if (item.getProduct().getCategory().equals(Product.ACCESSORIES)) {
-                float booksDiscount = 0;
                 if (itemAmount >= 100) {
-                    booksDiscount = itemAmount * 10 / 100;
+                    discount = itemAmount * 10 / 100;
                 }
-                itemAmount = itemAmount - booksDiscount;
             }
             if (item.getProduct().getCategory().equals(Product.BIKES)) {
-                // itemAmount=itemAmount-discount
-                itemAmount = itemAmount - itemAmount * 20 / 100;
+                discount = itemAmount * 20 / 100;
             }
             if (item.getProduct().getCategory().equals(Product.CLOTHING)) {
-                float clothingDiscount = 0;
+                discount = 0;
                 if (item.getQuantity() > 2) {
-                    clothingDiscount = item.getProduct().getUnitPrice();
+                    discount = item.getProduct().getUnitPrice();
                 }
-                itemAmount = itemAmount - clothingDiscount;
             }
+            itemAmount = itemAmount - discount;
             totalAmount += itemAmount;
         }
 
