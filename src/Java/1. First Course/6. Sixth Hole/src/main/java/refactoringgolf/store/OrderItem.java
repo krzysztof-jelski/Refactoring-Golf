@@ -19,7 +19,7 @@ class OrderItem {
     }
 
     float total() {
-        return unitPricePerQuantity() - product.getDiscount().calculateDiscount(this);
+        return unitPricePerQuantity() - product.calculateDiscount(this);
     }
 
     float unitPricePerQuantity() {

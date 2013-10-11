@@ -44,7 +44,7 @@ public class Product {
                 + category + "</category>" + "</product>";
     }
 
-    CategoryDiscount getDiscount() {
-        return getCategory().getDiscount();
+    public float calculateDiscount(OrderItem orderItem) {
+        return getCategory().getDiscount().calculateDiscount(orderItem);
     }
 }
