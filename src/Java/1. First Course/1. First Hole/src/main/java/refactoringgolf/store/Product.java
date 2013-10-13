@@ -6,11 +6,11 @@ public class Product {
     public static final String ACCESSORIES = "Accessories";
     public static final String BIKES = "Bikes";
 
-    public String name;
-    public float unitPrice;
-    public String category;
-    public ImageInfo image;
-    public int unitsInStock;
+    private String name;
+    private float unitPrice;
+    private String category;
+    private ImageInfo image;
+    private int unitsInStock;
 
     public Product(String name, float unitPrice, String category, ImageInfo image) {
         this.name = name;
